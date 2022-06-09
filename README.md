@@ -82,7 +82,7 @@ We're ready to exploit.
 
 # Exploiting OVERFLOW1
 
-With our copied script, rename it as ```exploit1.py``` 
+With our copied script, rename it as ```exploit.py``` 
 
 We need to import mona and its config with the next command line:
 
