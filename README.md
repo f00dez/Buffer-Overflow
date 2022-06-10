@@ -10,7 +10,7 @@ We're using Windows to use the next debugger: https://github.com/therealdreg/x64
 
 
 
-# Preparation
+## Preparation
 Now, download wfreerdp from: https://ci.freerdp.com/job/freerdp-nightly-windows/arch=win32,label=vs2013/
 
 [![7eaca6a835462d61e6e728ee31e68002.png](https://i.postimg.cc/FzGDXYrC/7eaca6a835462d61e6e728ee31e68002.png)](https://postimg.cc/ZvBrrKy6)
@@ -128,7 +128,7 @@ EIP has the B's in it! And we are right at the top of the stack (```ESP```)
 
 [![8c085382a900fc64f7b2af19c23e0001.png](https://i.postimg.cc/qRf6rFr6/8c085382a900fc64f7b2af19c23e0001.png)](https://postimg.cc/yJP8Xvk7)
 
-# Looking for badchars at OVERFLOW1
+## Looking for badchars at OVERFLOW1
 
 Now it's time to exclude some bad characters(hex characters that alterate our desired shellcode to exploit).
 
@@ -178,7 +178,7 @@ We're here!
 
 ![7fa436086609254e6b183100a671d6ff](https://user-images.githubusercontent.com/107146199/172824425-14ae5fe4-c207-463a-b523-20d0a3a68c8a.png)
 
-# Looking for badchars at OVERFLOW2
+## Looking for badchars at OVERFLOW2
 
 Do the same steps as we did at OVERFLOW1, first of all exclude the "null-byte" ```\x00```: ```mona.mona('bytearray -cpb "\\x00"')```
 
@@ -210,7 +210,7 @@ Wait x32dbg to receive the payload and do a search of EIP ```mona.mona("pattern_
 
 It's time for bad characters!
 
-# Looking for badchars at OVERFLOW3
+## Looking for badchars at OVERFLOW3
 
 Do the same steps as we did at OVERFLOW2, first of all exclude the "null-byte" ```\x00```: ```mona.mona('bytearray -cpb "\\x00"')```
 
@@ -230,4 +230,8 @@ Our badchars are: ```\x00\x11\x40\x5F\xb8\xee``` TASK COMPLETED!!
 
 If you're here, congrats, you're able to solve last tasks of this tryhackme lab!
 
-Credits to: https://github.com/therealdreg
+# Credits 
+
+https://github.com/therealdreg
+
+https://github.com/x64dbg
