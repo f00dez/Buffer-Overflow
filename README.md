@@ -6,7 +6,7 @@ First of all, the web mentioned: https://tryhackme.com/room/bufferoverflowprep
 We'll just take three of ten tasks.
 
 On your Windows virtual machine, download the OpenVPN app and your config file and connect to the TryHackMe lab.
-We're using Windows to use the next debugger: https://github.com/therealdreg/x64dbg-exploiting
+We're using Windows for the next debugger: https://github.com/therealdreg/x64dbg-exploiting
 
 
 
